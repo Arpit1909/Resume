@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arpit Sharma - Resume</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+        body {
+            background-color: #999999;
+            margin: 0;
+            padding: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        .sheet {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 15mm 18mm;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            box-shadow: 0 0 8px #555555;
+        }
+        /* ---------- Header : details left, passport photo right ---------- */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10mm;
+            padding-bottom: 4mm;
+            border-bottom: 2px solid #b03a2e;
+        }
+        .photo {
+            width: 35mm;
+            height: 45mm;
+            object-fit: cover;
+            object-position: top;
+            border: 1px solid #bbbbbb;
+            box-sizing: border-box;
+            display: block;
+            flex-shrink: 0;
+        }
+        h1 {
+            font-size: 26px;
+            letter-spacing: 1px;
+            margin: 0 0 3px 0;
+            line-height: 1;
+        }
+        .role {
+            color: #b03a2e;
+            font-weight: bold;
+            font-size: 13px;
+            margin: 0 0 7px 0;
+        }
+        .contact { margin: 0; color: #333333; }
+        .contact a { color: #333333; }
+
+        /* ---------- Section headings ---------- */
+        h2 {
+            font-size: 12px;
+            color: #b03a2e;
+            letter-spacing: 1px;
+            margin: 14px 0 5px 0;
+            padding-bottom: 2px;
+            border-bottom: 1px solid #d5d5d5;
+        }
+        h3 { font-size: 12px; margin: 0; }
+        p  { margin: 5px 0; }
+        ul, ol { margin: 5px 0; padding-left: 18px; }
+        li { margin-bottom: 4px; }
+        .date { float: right; font-style: italic; font-weight: normal; color: #555555; }
+
+        @media print {
+            body { background-color: #ffffff; padding: 0; }
+            .sheet { box-shadow: none; }
+        }
+    </style>
+</head>
+
+<body>
+
+<!--A4 Sheet starts-->
+
+<div class="sheet">
+
+    <!-- HEADER  -->
+
+    <div class="header">
+
+        <div>
+            <h1>ARPIT SHARMA</h1>
+            <p class="role">AI Engineer | Prompt Engineering | Full-Stack Development</p>
+
+            <p class="contact">
+                +91 80911 04602 &nbsp;&middot;&nbsp;
+                <a href="mailto:arpitsharma4602@gmail.com">arpitsharma4602@gmail.com</a><br>
+                <a href="https://linkedin.com/in/arpit-sharma-746484303">linkedin.com/in/arpit-sharma-746484303</a>
+                &nbsp;&middot;&nbsp;
+                <a href="https://github.com/Arpit1909">github.com/Arpit1909</a>
+            </p>
+        </div>
+
+        <!-- Passport size photo : 35mm x 45mm -->
+        <img class="photo" src="photo.jpg" alt="Arpit Sharma">
+
+    </div>
+
+    <!-- SUMMARY  -->
+    <h2>SUMMARY</h2>
+
+    <p>
+        AI Engineer with <b>10 months</b> of hands-on industry experience building production systems &mdash;
+        an HRMS platform serving 200+ users, a client-facing AI therapy voice bot trained on real counseling data,
+        and AI video and virtual-influencer generation pipelines. MCA (AI &amp; ML) candidate with a published NLP
+        research paper (ICNARI-2026, NIT Patna) and experience as a Google Gemini Student Ambassador.
+        Targeting remote AI/ML, prompt engineering, and full-stack development roles.
+    </p>
+
+
+    <!-- TECHNICAL SKILLS  -->
+    <h2>TECHNICAL SKILLS</h2>
+    <ul>
+        <li><b>Languages:</b> Python, JavaScript, SQL, C, C++, C#, HTML/CSS</li>
+        <li><b>AI &amp; LLM Tools:</b> Prompt Engineering &amp; Optimization, Claude, ChatGPT, Google Gemini, ComfyUI</li>
+        <li><b>Data &amp; Web:</b> Flask, pandas, NumPy, Full-Stack Web Development</li>
+        <li><b>Tools &amp; Automation:</b> Git, GitHub, n8n, Linux, VPS Deployment (PM2, Caddy)</li>
+    </ul>
+
+    <!-- WORK EXPERIENCE  -->
+    <h2>WORK EXPERIENCE</h2>
+    <p>
+        <span class="date">Sept 2025 &ndash; Jun 2026 &middot; 10 months</span>
+        <b>AI Engineer Intern &mdash; NB Media Productions</b>
+    </p>
+    <ul>
+        <li>Built and deployed an <b>HRMS platform</b> from scratch to production, serving 200+ active users
+            &mdash; owned the full stack across front end, back end, and database.</li>
+        <li>Developed a client-facing <b>AI therapy voice bot</b> for a practicing therapist, trained on the
+            practitioner's counseling data to deliver personalized, context-aware responses to client concerns.</li>
+        <li>Engineered prompt-optimized generation pipelines for AI video and virtual-influencer content used in
+            media production.</li>
+        <li>Designed and shipped internal web tools &mdash; case tracking, record verification, and document
+            generation &mdash; adopted by a 100+ member team.</li>
+        <li>Applied LLMs (Claude, Gemini, ChatGPT) and ComfyUI to automate production workflows, deploying and
+            maintaining services on VPS infrastructure (PM2, Caddy) with n8n workflow automation.</li>
+    </ul>
+
+
+    <!-- PROJECTS  -->
+    <h2>PROJECTS</h2>
+    <ul>
+        <li><b>HRMS Platform</b> &mdash; End-to-end human resource management system built from scratch;
+            live in production serving 200+ users.</li>
+        <li><b>AI Therapy Voice Bot</b> &mdash; Conversational voice bot that listens to client concerns and
+            responds with personalized guidance, trained on a therapist's counseling data
+            (GitHub: <i>Ronit-AI-voice-bot</i>).</li>
+        <li><b>AI Video Subtitle Remover</b> &mdash; Automated pipeline for subtitle detection
+            (EasyOCR/PaddleOCR) and removal via video inpainting (ProPainter, LaMa), deployed on GPU cloud
+            infrastructure.</li>
+        <li><b>Payment Portal</b> &mdash; Web-based payment portal developed for production use.</li>
+        <li><b>11+ public repositories</b> on GitHub, incl. Case-Tracker, Case-Verification-Tool, TTH-Generator,
+            and Task-Manager &mdash; <a href="https://github.com/Arpit1909">github.com/Arpit1909</a>.</li>
+    </ul>
+
+
+    <!-- EDUCATION  -->
+    <h2>EDUCATION</h2>
+    <ul>
+        <li><b>Master of Computer Applications (MCA) &mdash; AI &amp; ML</b> (2026 &ndash; 2028)<br>
+            <i>Shoolini University, Solan, Himachal Pradesh</i></li>
+        <li><b>Bachelor of Computer Applications (BCA) &mdash; AI &amp; ML</b> (Graduated 2026)<br>
+            <i>Shoolini University, Solan, Himachal Pradesh &middot; Final-Semester CGPA: 10/10</i></li>
+    </ul>
+
+
+    <!-- RESEARCH AND RECOGNITION  -->
+    <h2>RESEARCH &amp; RECOGNITION</h2>
+    <ol>
+        <li><b>Research Publication (Second Author):</b>
+            "Entity Pyramid Approach-Based Multi-Document Summarization" &mdash; ICNARI-2026, International
+            Conference on Next-Generation Adaptive Research and Innovations, NIT Patna (Mar 2026).</li>
+        <li><b>Google Gemini Student Ambassador</b>, 2025&ndash;26.</li>
+        <li><b>Student Coordinator</b>, HCICC-25 International Conference, Shoolini University &mdash;
+            managed event coordination and participant communication.</li>
+    </ol>
+
+</div>
+</body>
+
+</html>
